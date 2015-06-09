@@ -1,0 +1,23 @@
+{
+  "name": "angular-accommodation-equipment-chooser",
+  "version": "0.0.0",
+  "homepage": "https://github.com/locator-kn/angular-accommodation-equipment-chooser",
+  "authors": [
+    "Dennis Moosmann <dennis.moosmann@gmx.de>"
+  ],
+  "description": "Angular directive to set the accmmodation equipment",
+  "main": "js/directive.js",
+  "keywords": [
+    "angular",
+    "directive",
+    "accommodation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
