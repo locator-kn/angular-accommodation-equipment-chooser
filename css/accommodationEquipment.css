@@ -9,65 +9,65 @@
 }
 
 .wifi {
-    background-image: url("/images/icons/icons_stimmung-13.png");
+    background-image: url("/images/icons/wifi.png");
 }
 
 .wifiGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-13.png");
+    background-image: url("/images/icons/wifi_grey.png");
 }
 
 .tv {
-    background-image: url("/images/icons/icons_stimmung-14.png");
+    background-image: url("/images/icons/tv.png");
 }
 
 .tvGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-14.png");
+    background-image: url("/images/icons/tv_grey.png");
 }
 
 .shower {
-    background-image: url("/images/icons/icons_stimmung-15.png");
+    background-image: url("/images/icons/shower.png");
 }
 
 .showerGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-15.png");
+    background-image: url("/images/icons/shower_grey.png");
 }
 
 .meal {
-    background-image: url("/images/icons/icons_stimmung-20.png");
+    background-image: url("/images/icons/kitchen.png");
 }
 
 .mealGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-20.png");
+    background-image: url("/images/icons/kitchen_grey.png");
 }
 
 .breakfast {
-    background-image: url("/images/icons/icons_stimmung-18.png");
+    background-image: url("/images/icons/breakfast.png");
 }
 
 .breakfastGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-18.png");
+    background-image: url("/images/icons/breakfast_grey.png");
 }
 
 .smoker {
-    background-image: url("/images/icons/icons_stimmung-16.png");
+    background-image: url("/images/icons/smoking.png");
 }
 
 .smokerGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-16.png");
+    background-image: url("/images/icons/smoking_grey.png");
 }
 
 .parking {
-    background-image: url("/images/icons/icons_stimmung-19.png");
+    background-image: url("/images/icons/parking.png");
 }
 
 .parkingGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-19.png");
+    background-image: url("/images/icons/parking_grey.png");
 }
 
 .handicapped {
-    background-image: url("/images/icons/icons_stimmung-17.png");
+    background-image: url("/images/icons/wheelchair.png");
 }
 
 .handicappedGrey {
-    background-image: url("/images/icons/icons_stimmung_ausgegraut-17.png");
+    background-image: url("/images/icons/wheelchair_grey.png");
 }
