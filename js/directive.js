@@ -3,14 +3,14 @@
 angular.module('locator.accommodation-equipment-chooser', []).directive('accEquChooser', function () {
 
     var template = [
-        '<div class="wifi equi-ico pointer tt tt-small" aria-label="WLAN" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false}"></div>',
-        '<div class="tv equi-ico pointer tt tt-small" aria-label="Fernsehen" ng-click="addAccommodationEquipment(tv)" ng-class="{tvGrey: containsAccommodation(tv) == false}"></div>',
-        '<div class="shower equi-ico pointer tt tt-small"  aria-label="Dusche/WC" ng-click="addAccommodationEquipment(shower)" ng-class="{showerGrey: containsAccommodation(shower) == false}"></div>',
-        '<div class="meal equi-ico pointer tt tt-small" aria-label="Kochmöglichkeiten" ng-click="addAccommodationEquipment(meal)" ng-class="{mealGrey: containsAccommodation(meal) == false}"></div>',
-        '<div class="breakfast equi-ico pointer tt tt-small" aria-label="Frühstück" ng-click="addAccommodationEquipment(breakfast)" ng-class="{breakfastGrey: containsAccommodation(breakfast) == false}"></div>',
-        '<div class="smoker equi-ico pointer tt tt-small" aria-label="Rauchermöglichkeiten" ng-click="addAccommodationEquipment(smoker)" ng-class="{smokerGrey: containsAccommodation(smoker) == false}"></div>',
-        '<div class="parking equi-ico pointer tt tt-small" aria-label="Parkmöglichkeiten" ng-click="addAccommodationEquipment(parking)" ng-class="{parkingGrey: containsAccommodation(parking) == false}"></div>',
-        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="Behindertengerecht" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false}"></div>'
+        '<div class="wifi equi-ico pointer tt tt-small" aria-label="wlan" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false}"></div>',
+        '<div class="tv equi-ico pointer tt tt-small" aria-label="fernsehen" ng-click="addAccommodationEquipment(tv)" ng-class="{tvGrey: containsAccommodation(tv) == false}"></div>',
+        '<div class="shower equi-ico pointer tt tt-small"  aria-label="dusche/wc" ng-click="addAccommodationEquipment(shower)" ng-class="{showerGrey: containsAccommodation(shower) == false}"></div>',
+        '<div class="meal equi-ico pointer tt tt-small" aria-label="kochmöglichkeiten" ng-click="addAccommodationEquipment(meal)" ng-class="{mealGrey: containsAccommodation(meal) == false}"></div>',
+        '<div class="breakfast equi-ico pointer tt tt-small" aria-label="frühstück" ng-click="addAccommodationEquipment(breakfast)" ng-class="{breakfastGrey: containsAccommodation(breakfast) == false}"></div>',
+        '<div class="smoker equi-ico pointer tt tt-small" aria-label="rauchermöglichkeiten" ng-click="addAccommodationEquipment(smoker)" ng-class="{smokerGrey: containsAccommodation(smoker) == false}"></div>',
+        '<div class="parking equi-ico pointer tt tt-small" aria-label="parkmöglichkeiten" ng-click="addAccommodationEquipment(parking)" ng-class="{parkingGrey: containsAccommodation(parking) == false}"></div>',
+        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="behindertengerecht" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false}"></div>'
     ];
 
     return {
