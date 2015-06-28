@@ -43,6 +43,10 @@ angular.module('locator.accommodation-equipment-chooser', []).directive('accEquC
             $scope.containsAccommodation = function(equipment) {
                 return !!lodash.findWhere(this.accommodationEquipment, equipment);
             }
+			
+			$scope.getJustShowSelected = function() {
+                return $scope.justShowSelected;
+            }
         },
         template: template.join('')
     };
