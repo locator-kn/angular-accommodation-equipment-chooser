@@ -10,7 +10,7 @@ angular.module('locator.accommodation-equipment-chooser', []).directive('accEquC
         '<div class="breakfast equi-ico pointer tt tt-small" aria-label="frühstück" ng-hide="containsAccommodation(breakfast) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(breakfast)" ng-class="{breakfastGrey: containsAccommodation(breakfast) == false}"></div>',
         '<div class="smoker equi-ico pointer tt tt-small" aria-label="rauchermöglichkeiten" ng-hide="containsAccommodation(smoker) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(smoker)" ng-class="{smokerGrey: containsAccommodation(smoker) == false}"></div>',
         '<div class="parking equi-ico pointer tt tt-small" aria-label="parkmöglichkeiten" ng-hide="containsAccommodation(parking) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(parking)" ng-class="{parkingGrey: containsAccommodation(parking) == false}"></div>',
-        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="behindertengerecht" ng-hide="containsAccommodation(wifi) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false}"></div>'
+        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="behindertengerecht" ng-hide="containsAccommodation(handicapped) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false}"></div>'
     ];
 
     return {
