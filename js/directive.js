@@ -3,7 +3,7 @@
 angular.module('locator.accommodation-equipment-chooser', []).directive('accEquChooser', function () {
 
     var template = [
-        '<div class="wifi equi-ico pointer tt tt-small" aria-label="wlan" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false}"></div>',
+        '<div class="wifi equi-ico pointer tt tt-small" aria-label="wlan" ng-hide="containsAccommodation(wifi) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false}"></div>',
         '<div class="tv equi-ico pointer tt tt-small" aria-label="fernsehen" ng-click="addAccommodationEquipment(tv)" ng-class="{tvGrey: containsAccommodation(tv) == false}"></div>',
         '<div class="shower equi-ico pointer tt tt-small"  aria-label="dusche/wc" ng-click="addAccommodationEquipment(shower)" ng-class="{showerGrey: containsAccommodation(shower) == false}"></div>',
         '<div class="meal equi-ico pointer tt tt-small" aria-label="kochmöglichkeiten" ng-click="addAccommodationEquipment(meal)" ng-class="{mealGrey: containsAccommodation(meal) == false}"></div>',
