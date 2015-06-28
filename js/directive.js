@@ -16,7 +16,8 @@ angular.module('locator.accommodation-equipment-chooser', []).directive('accEquC
     return {
         scope: {
             'accommodationEquipmentSelectable': '=',
-            'accommodationEquipment': '='
+            'accommodationEquipment': '=',
+			'justShowSelected': '='
         },
 
         controller: function ($scope, lodash) {
