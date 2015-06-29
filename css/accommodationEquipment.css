@@ -16,12 +16,20 @@
     background-image: url("../icons/wifi_grey.png");
 }
 
+.wifiWhite {
+    background-image: url("../icons/wifi_white.png");
+}
+
 .tv {
     background-image: url("../icons/tv.png");
 }
 
 .tvGrey {
     background-image: url("../icons/tv_grey.png");
+}
+
+.tvWhite {
+    background-image: url("../icons/tv_white.png");
 }
 
 .shower {
@@ -32,12 +40,20 @@
     background-image: url("../icons/shower_grey.png");
 }
 
+.showerWhite {
+    background-image: url("../icons/shower_white.png");
+}
+
 .meal {
     background-image: url("../icons/kitchen.png");
 }
 
 .mealGrey {
     background-image: url("../icons/kitchen_grey.png");
+}
+
+.mealWhite {
+    background-image: url("../icons/kitchen_white.png");
 }
 
 .breakfast {
@@ -48,12 +64,20 @@
     background-image: url("../icons/breakfast_grey.png");
 }
 
+.breakfastWhite {
+    background-image: url("../icons/breakfast_white.png");
+}
+
 .smoker {
     background-image: url("../icons/smoking.png");
 }
 
 .smokerGrey {
     background-image: url("../icons/smoking_grey.png");
+}
+
+.smokerWhite {
+    background-image: url("../icons/smoking_white.png");
 }
 
 .parking {
@@ -64,10 +88,18 @@
     background-image: url("../icons/parking_grey.png");
 }
 
+.parkingWhite {
+    background-image: url("../icons/parking_white.png");
+}
+
 .handicapped {
     background-image: url("../icons/wheelchair.png");
 }
 
 .handicappedGrey {
     background-image: url("../icons/wheelchair_grey.png");
+}
+
+.handicappedWhite {
+    background-image: url("../icons/wheelchair_white.png");
 }
