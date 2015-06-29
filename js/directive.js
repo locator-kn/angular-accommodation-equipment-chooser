@@ -3,21 +3,22 @@
 angular.module('locator.accommodation-equipment-chooser', []).directive('accEquChooser', function () {
 
     var template = [
-        '<div class="wifi equi-ico pointer tt tt-small" aria-label="wlan" ng-hide="containsAccommodation(wifi) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false}"></div>',
-        '<div class="tv equi-ico pointer tt tt-small" aria-label="fernsehen" ng-hide="containsAccommodation(tv) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(tv)" ng-class="{tvGrey: containsAccommodation(tv) == false}"></div>',
-        '<div class="shower equi-ico pointer tt tt-small"  aria-label="dusche/wc" ng-hide="containsAccommodation(shower) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(shower)" ng-class="{showerGrey: containsAccommodation(shower) == false}"></div>',
-        '<div class="meal equi-ico pointer tt tt-small" aria-label="kochmöglichkeiten" ng-hide="containsAccommodation(meal) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(meal)" ng-class="{mealGrey: containsAccommodation(meal) == false}"></div>',
-        '<div class="breakfast equi-ico pointer tt tt-small" aria-label="frühstück" ng-hide="containsAccommodation(breakfast) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(breakfast)" ng-class="{breakfastGrey: containsAccommodation(breakfast) == false}"></div>',
-        '<div class="smoker equi-ico pointer tt tt-small" aria-label="rauchermöglichkeiten" ng-hide="containsAccommodation(smoker) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(smoker)" ng-class="{smokerGrey: containsAccommodation(smoker) == false}"></div>',
-        '<div class="parking equi-ico pointer tt tt-small" aria-label="parkmöglichkeiten" ng-hide="containsAccommodation(parking) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(parking)" ng-class="{parkingGrey: containsAccommodation(parking) == false}"></div>',
-        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="behindertengerecht" ng-hide="containsAccommodation(handicapped) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false}"></div>'
+        '<div class="wifi equi-ico pointer tt tt-small" aria-label="wlan" ng-hide="containsAccommodation(wifi) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(wifi)" ng-class="{wifiGrey: containsAccommodation(wifi) == false, wifiWhite: iconsColor == white}"></div>',
+        '<div class="tv equi-ico pointer tt tt-small" aria-label="fernsehen" ng-hide="containsAccommodation(tv) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(tv)" ng-class="{tvGrey: containsAccommodation(tv) == false, tvWhite: iconsColor == white}"></div>',
+        '<div class="shower equi-ico pointer tt tt-small"  aria-label="dusche/wc" ng-hide="containsAccommodation(shower) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(shower)" ng-class="{showerGrey: containsAccommodation(shower) == false, showerWhite: iconsColor == white}"></div>',
+        '<div class="meal equi-ico pointer tt tt-small" aria-label="kochmöglichkeiten" ng-hide="containsAccommodation(meal) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(meal)" ng-class="{mealGrey: containsAccommodation(meal) == false, mealWhite: iconsColor == white}"></div>',
+        '<div class="breakfast equi-ico pointer tt tt-small" aria-label="frühstück" ng-hide="containsAccommodation(breakfast) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(breakfast)" ng-class="{breakfastGrey: containsAccommodation(breakfast) == false, breakfastWhite: iconsColor == white}"></div>',
+        '<div class="smoker equi-ico pointer tt tt-small" aria-label="rauchermöglichkeiten" ng-hide="containsAccommodation(smoker) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(smoker)" ng-class="{smokerGrey: containsAccommodation(smoker) == false, smokerWhite: iconsColor == white}"></div>',
+        '<div class="parking equi-ico pointer tt tt-small" aria-label="parkmöglichkeiten" ng-hide="containsAccommodation(parking) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(parking)" ng-class="{parkingGrey: containsAccommodation(parking) == false, parkingWhite: iconsColor == white}"></div>',
+        '<div class="handicapped equi-ico pointer tt tt-small" aria-label="behindertengerecht" ng-hide="containsAccommodation(handicapped) == false && getJustShowSelected() == true" ng-click="addAccommodationEquipment(handicapped)" ng-class="{handicappedGrey: containsAccommodation(handicapped) == false, handicappedWhite: iconsColor == white}"></div>'
     ];
 
     return {
         scope: {
             'accommodationEquipmentSelectable': '=',
             'accommodationEquipment': '=',
-			'justShowSelected': '='
+            'justShowSelected': '=',
+            'iconsColor': '='
         },
 
         controller: function ($scope, lodash) {
@@ -29,6 +30,7 @@ angular.module('locator.accommodation-equipment-chooser', []).directive('accEquC
             $scope.smoker = 'smoker';
             $scope.parking = 'parking';
             $scope.handicapped = 'handicapped';
+            $scope.white = 'white';
             $scope.addAccommodationEquipment = function (equipment) {
                 if ($scope.accommodationEquipmentSelectable) {
                     if ($scope.containsAccommodation(equipment)) {
@@ -43,8 +45,8 @@ angular.module('locator.accommodation-equipment-chooser', []).directive('accEquC
             $scope.containsAccommodation = function(equipment) {
                 return !!lodash.findWhere(this.accommodationEquipment, equipment);
             }
-			
-			$scope.getJustShowSelected = function() {
+
+            $scope.getJustShowSelected = function() {
                 return $scope.justShowSelected;
             }
         },
