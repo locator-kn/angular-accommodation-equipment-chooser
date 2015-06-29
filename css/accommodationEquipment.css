@@ -10,62 +10,77 @@
 
 .wifi {
     background-image: url("../icons/wifi.png");
+    background-size: 50px 50px;
 }
 
 .wifiGrey {
     background-image: url("../icons/wifi_grey.png");
+    background-size: 50px 50px;
 }
 
 .wifiWhite {
     background-image: url("../icons/wifi_white.png");
+    background-size: 50px 50px;
 }
 
 .tv {
     background-image: url("../icons/tv.png");
+    background-size: 50px 50px;
 }
 
 .tvGrey {
     background-image: url("../icons/tv_grey.png");
+    background-size: 50px 50px;
 }
 
 .tvWhite {
     background-image: url("../icons/tv_white.png");
+    background-size: 50px 50px;
 }
 
 .shower {
     background-image: url("../icons/shower.png");
+    background-size: 50px 50px;
 }
 
 .showerGrey {
     background-image: url("../icons/shower_grey.png");
+    background-size: 50px 50px;
 }
 
 .showerWhite {
     background-image: url("../icons/shower_white.png");
+    background-size: 50px 50px;
 }
 
 .meal {
     background-image: url("../icons/kitchen.png");
+    background-size: 50px 50px;
 }
 
 .mealGrey {
     background-image: url("../icons/kitchen_grey.png");
+    background-size: 50px 50px;
 }
 
 .mealWhite {
     background-image: url("../icons/kitchen_white.png");
+    background-size: 50px 50px;
 }
 
 .breakfast {
     background-image: url("../icons/breakfast.png");
+    background-size: 50px 50px;
 }
 
 .breakfastGrey {
     background-image: url("../icons/breakfast_grey.png");
+    background-size: 50px 50px;
 }
 
 .breakfastWhite {
     background-image: url("../icons/breakfast_white.png");
+    background-size: 50px 50px;
 }
 
 .smoker {
