@@ -85,36 +85,45 @@
 
 .smoker {
     background-image: url("../icons/smoking.png");
+    background-size: 50px 50px;
 }
 
 .smokerGrey {
     background-image: url("../icons/smoking_grey.png");
+    background-size: 50px 50px;
 }
 
 .smokerWhite {
     background-image: url("../icons/smoking_white.png");
+    background-size: 50px 50px;
 }
 
 .parking {
     background-image: url("../icons/parking.png");
+    background-size: 50px 50px;
 }
 
 .parkingGrey {
     background-image: url("../icons/parking_grey.png");
+    background-size: 50px 50px;
 }
 
 .parkingWhite {
     background-image: url("../icons/parking_white.png");
+    background-size: 50px 50px;
 }
 
 .handicapped {
     background-image: url("../icons/wheelchair.png");
+    background-size: 50px 50px;
 }
 
 .handicappedGrey {
     background-image: url("../icons/wheelchair_grey.png");
+    background-size: 50px 50px;
 }
 
 .handicappedWhite {
     background-image: url("../icons/wheelchair_white.png");
+    background-size: 50px 50px;
 }
